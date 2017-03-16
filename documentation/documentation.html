@@ -1,0 +1,357 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>AUTUMN HTML CSS TEMPLATE - Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="file/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        body {
+            font: 13px/1.4 "Trebuchet MS", Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+		h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.8em; }
+        h4 { font-size: 1.3em; }
+        h5 { font-size: 1.15em; }
+
+        #wrapper {
+            width: 700px;
+            margin: 0 auto;
+        }
+        p, table, hr, .box {
+            margin-bottom:25px;
+        }
+        .box p {
+            margin-bottom:10px;
+        }
+		.socials{
+			text-align:center;
+            padding-left: 80px;
+        }
+		.alt { 
+		  color: #666; 
+		  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif; 
+		  font-style: italic;
+		  font-weight: normal;
+		}
+        code {
+            font: 13px/1.3 "Courier New", Courier, monospace;
+            background-color: #eee;
+            border: 1px dotted #aaa;
+            padding: 0px 3px;
+        }
+        pre {
+            font: 13px/1.3 "Courier New", Courier, monospace;
+            background-color: #eee;
+            border: 1px dotted #aaa;
+            padding: 0px 3px;
+        }
+        .note {
+            color: #f33;
+            font-weight: bold;
+        }
+		.sub { padding-left:20px;}
+        .style2 {color: #000000}
+    .sub1 {padding-left:20px;}
+    .style3 {
+	color: #FF0000;
+	font-weight: bold;
+}
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+		<hr />
+        <h2 align="center">&ldquo;Autumn&rdquo; HTML CSS Template</h2>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+					Created: 21/02/2012<br>
+					By: “tultul”<br>
+					Version: v1.0<br>
+				Email: <a href="mailto:tabassum1234@gmail.com">tabassum1234@gmail.com</a></strong></p>
+          </div>
+            <!-- end div .span-6 -->
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Hello! First of all I would like to thank you for purchasing my theme!</p>
+                <p class="prepend-top append-0">This documentation will teach you how to set up and use the “Autumn” html/css template.
+</p>
+                <p> If you like this theme</p>
+                <div align="center" class="style2">Please don't forget to rate it on the ThemeForest site.                </div>
+              <p class="prepend-top append-0">Best regards
+                  <strong>tultul</strong> </p>
+          </div>
+        </div>
+        <hr />
+		
+		<div>
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#Files">Files</a></li>
+            <li><a href="#HTML">HTML structure</a></li>
+            <li><a href="#CSS">CSS structure</a></li>
+            <li><a href="#Javascript">Javascript</a></li>
+            <li><a href="#PSD">PSD files</a></li>
+            <li><a href="#PHP">PHP files</a></li>
+            <li><a href="#Customizing">Customizing</a></li>
+			<li><a href="#Sources">Sources and credits</a></li>
+        </ol>
+		</div>
+        <hr>
+        <h3 id="Files"><strong>1) Files </strong> - <a href="#toc">top</a></h3>
+		<table width="64%">
+<tr>
+				<td><div align="right"><strong>[css]</strong></div></td>
+	  <td>This folder contains all style sheet files of the template.</td>
+		  </tr>
+			<tr>
+				<td class="t"><div align="right"><strong>[js]</strong></div></td>
+			  <td>This folder contains all javascript files of the template.</td>
+		  </tr>
+			<tr>
+				<td class="t"><div align="right"><strong>[images]</strong></div></td>
+			  <td>This folder contains all images of the template.</td>
+		  </tr>
+          <tr>
+			<td class="t"><div align="right"><strong>[contents], [scripts]</strong></div></td>
+			  <td>Those folders contains piecemaker related files.</td>
+		  </tr>
+          <tr>
+			<td class="t"><div align="right"><strong>[colorpicker]</strong></div></td>
+			  <td>This folder contains colorpicker files.</td>
+		  </tr>
+			<tr>
+				<td><div align="right"><strong>Files </strong></div></td>
+			  <td>HTML pages, contact-send.php, piecemaker files.</td>
+		  </tr>
+		</table>
+  <br><br><hr>
+		<h3 id="HTML"><strong>2) HTML structure</strong> - <a href="#toc">top</a></h3>
+		<ul type="circle">
+			<li><b>Header</b> - The header is always positioned at the top of the page. It consists on a div named "header” class, which encloses a div named class “logo” and an unordered list named “menu” (main menu). After if you are show source of home page, you will see slider section.</li>
+			<li><b>Slider</b>  – The slider section is always positioned at bottom of the header and above of the main container. It consists on a div named “row” for the homepages.</li>
+			<li><b>Main content</b>(Homepage) -  A class &quot;content_body&quot; contains the whole content area. Upper 3 columns consist of 3 classes &quot;three_col_left&quot;,&quot;three_col&quot; and &quot;three_col_right&quot; . </li>
+			<li><b>Main content (other pages) </b> – A class &quot;content_body&quot; contains the whole content area. Inside this, there is another div &quot;box&quot; which contains the left and right side contents. </li>
+			<li><strong>Box</strong>– Content area. That area contains following parts.
+				<ul type="disc">
+					<li><strong>Left content area </strong>– it consists of a class &quot;box_left&quot; </li>
+					<li><strong>Right sidebar </strong>–  it consists of a class &quot;box_right&quot; </li>
+				</ul>
+		  </li>
+			<li><b>Bottom(homepage)</b> – There is a small slider at the bottom part of the homepage. It consists of a class &quot;advert2&quot;. </li>
+			<li><b>Footer</b> - The footer area is always positioned at the bottom of the bottom area and above of the extra2 area. It consists on a div named “footer” class</li>
+			<li><strong>Extra</strong>– This contains the copyright text and the social bookmarks<br>
+      </li>
+		</ul>
+		<hr>
+
+        <h3 id="CSS"><strong>3) CSS files & Structure</strong> - <a href="#toc">top</a></h3>
+		The template contains following CSS files:
+		<ul type="circle">
+			<li><b>default.css</b> – This is the main style sheet file.</li>
+			<li><b>style.css</b> – It contains the buttons and link color styles. </li>
+			<li><b>portfolio.css</b> – It styles filterable portfolio.</li>
+			<li><b>mosaic.css -</b>It styles hover effect of the filterable portfolio </li>
+			<li><strong>piecemaker.css</strong> - It styles the piecemaker slider.</li>
+			<li><strong>nivo-slider.css</strong> -  It structures the nivo slider.</li>
+			<li><strong>pascal.css</strong> -  It styles the nivo slider.</li>
+			<li><b> accordion.css</b> -  It styles the accordion slider. </li>
+			<li><b>prettyPhoto.css</b> - It styles the modal window displayed when looking at the portfolio or content images.</li>
+			<li><b>coda-slider-2.0.css</b> - It styles the content slider in product details page. </li>
+			<li><b>jquery.jcarousel.css</b> – It styles the homepage content carousel slider. </li>
+		</ul>
+	  The last file (default.css) contains all of the specific styling for pages. The file is separated into sections:
+      <ul type="circle">
+			<li><b>Common part </b>(containing styles for basic elements p,a,body)</li>
+			<li><b>Heading Style</b> (containing styles for the text and styles for the from H1 to H6)</li>
+			<li><b>List Styles</b> (containing styles for the lists)</li>
+			<li><strong>Notice Styles</strong> (containing styles for the notice boxes)</li>
+			<li><strong>CORE STRUCTURE</strong> (containing styles for the page stucture)</li>
+			<li><b>Header style</b> (containing the styles for the header, logo)</li>
+			<li><strong>Navigation menu style </strong>(containing the styles for the navigation menu)</li>
+			<li><strong>About us styles </strong>(containing the styles for about page) </li>
+			<li><b>Sidebar style</b> (containing the styles for the sidebar)</li>
+			<li><b>Other part styles</b> (containing the styles for the inside of content): Products, Portfolio, blog, service, Pricing, error page, Testimonials, Typography</li>
+	  </ul>
+		<p><br>
+		  <br>
+		</p>
+		<hr>
+		<h3 id="Javascript"><strong>4) Javascript</strong> - <a href="#toc">top</a></h3>
+		This template imports following JS files.<br><br>
+		1.<strong>JAVASCRIPT FILES </strong><br>
+		<br>
+		<div class="sub">
+
+	        <p>jquery-1.4.2.min.js - pure jQuery plugin<br>
+	          filterable.pack.js-<br>
+            superfish.js – script for navigation <br>
+		      supersubs.js - <span class="sub1">script for navigation</span><br>
+	          hoverIntent.js – <span class="sub1">script for mouse hover effect</span><br>
+			  script.js - custom script for prettyphoto, superfish, infinite carousel slider <br/>
+  			  jquery.easing.1.2 - script for easing effect <br>
+			  carousel.js – scripts for homepage's carousel slider <br>
+	          jquery.nivo.slider.js – scripts for the Nivo slider<br>
+	          jquery.elegantAccordion.js – scripts for accordion slider <br>
+	          jquery.prettyPhoto.js – scripts for prettyPhoto plugin<br>
+	          filterable.pack.js – scripts for the filterable plugin<br>
+	          jquery.coda-slider-2.0.js – scripts for the coda slider plugin<br>
+	          mosaic.1.0.1.js – scripts for the mosaic overlay effect <br>
+	          organictabs.jquery.js – scripts for the sidebar tab slider </p>
+	  </div>
+
+		<br><hr>
+        <h3 id="PSD"><strong>5) PSD files</strong> - <a href="#toc">top</a></h3>
+		<p>I've included following psds with this template:
+		  <br>
+		</p>
+		<div class="sub">
+		  <p><strong><b>autumnPsd.psd</b> -</strong> contains the main photoshop layout of the template <br>
+	      <strong>logo.psd</strong> - psd for the logo</p>
+	  </div>
+<br>
+      </p>
+    <hr>
+
+        <h3 id="PHP"><strong>6) PHP files</strong> - <a href="#toc">top</a></h3>
+        I've used the one PHP file named mail.php. That file used to send your contact information to your mail.<br>
+        <br>
+		Adding Your Email Address<br><br>
+        To add your own email address to the form, open the file "mail.php" and at the very top of the file replace "<span style="background:#efefef;padding:20px;">info@domain.com</span>" with your own email address. Be sure not to delete the quotes, semi-colon or other code when making this change.
+		<br>
+		<br><div style="background:#efefef;padding:20px;">$webemail=&quot;info@domain.com&quot;; // Replace with your email address</div>
+		<br><br>
+		<b>Problems Sending Emails</b><br><br>
+		If you experience trouble sending emails you should verify the following:<br><br>
+		<div class="sub">
+			1.    Make sure the address entered in "mail.php" is correct.<br>
+			2.    Verify that PHP is installed on the server your site is running on.<br>
+			3.    If necessary contact your hosting provider to ensure they do not need to activate something.		</div><br>
+			<br>
+			<hr>
+        <h3 id="Customizing"><strong>7) Customizing</strong> - <a href="#toc">top</a></h3>
+		<b>Enter your site name</b> – You can set the site name in the title tag of the each html files on fifth line.
+        <br><br><div style="background:#efefef;padding:20px;">&lt;title&gt;Your site name&lt;/title&gt;</div>
+        <p><br>
+		  <b>Set Logo</b> - You can use any image on your logo. Default image is set to 202px width and 59px height. If you need to adjust positioning, just edit the top margin value of logo class.<br>
+		  <br>
+		  <strong>Adding Image</strong> - Add a normal image, just use the "img" tag.</p>
+        <p>Here is the some preffered image sizes. It will set the size of your image which in your included section.</p>
+        <div class="sub">
+          <table width="64%">
+            <tr>
+              <td width="120"><div align="right"><strong>Portolio</strong></div></td>
+              <td>portfolio item details - big image   - 558x460px<br>
+                portfolio item details - small image   - 179.33x120px<br>
+filterable portfolio - 288x170px<br></td>
+            </tr>
+            <tr>
+              <td width="120" class="t"><div align="right"><strong> Product</strong></div></td>
+              <td>273x205px</td>
+            </tr>
+            <tr>
+              <td width="120" class="t"><div align="right"><strong>Featured Works</strong></div></td>
+              <td>170x140px</td>
+            </tr>
+            <tr>
+              <td width="120" class="t"><div align="right"><strong>Accordion</strong></div></td>
+              <td> 520x420px</td>
+            </tr>
+            <tr>
+              <td width="120" class="t"><div align="right"><strong>Nivo</strong></div></td>
+              <td>948x420px</td>
+            </tr>
+            <tr>
+              <td width="120" class="t"><div align="right">
+                <p><strong>Blog<br>
+                </strong><strong>Blog small</strong></p>
+                </div></td>
+              <td><p>600x240px<br>
+                186x120px, 60x60 </p>
+              </td>
+            </tr>
+          </table>
+      </div>
+        <p><br>
+		  <strong>Social media links</strong> – If you want to show a list with links to your social profiles, create an unordered list with a class of "social".<br>
+		  <br>
+		  <b>Full-width -</b> Use .full_width class to create f <a href="http://960.gs"></a>ull width page. <br>
+		  <br>
+	  <b>Customize colors</b> - go to style.css and change color of the links on 5th line. for different color button try out changing the colors where /*change color here */ is mentioned. </p>
+        <p>Changing default background pattern of your site is to easy. You need to add class named your preffered pattern (default-pat,head-pat1, head-pat2 ...).</p>
+        <div class="sub">
+          <p>&lt;div class=&quot;main <span class="style3">default-pat</span>&quot;&gt;
+<br/>			&lt;div class=&quot;header&quot;&gt;<br>
+						  &lt;div class=&quot;head&quot;&gt;<br>
+          </p>
+        </div>
+        </p>
+       
+         </p>
+      
+		<h4>&nbsp;</h4>
+		<h4><strong>Before publishing</strong></h4>
+		To keep your site as lightweight as possible, remember to do the following before publishing:<br><br>
+		<b>Remove comments from code</b><br><br>
+		This can be achieved by a simple search/replace with the following regular expression :&lt;!--[^\[].*?--&gt;\s*
+		<br><br><b>Minimise CSS and JS</b><br><br>
+		To reduce bandwith and server load, combine and compress css and js files:<br><br>
+		<b>CSS files</b> http://www.cleancss.com/<br><br>
+		<b>JS files</b> http://yui.2clics.net/<br><br>
+		<b>Compress png files</b><br>
+		Use <b>pngcrush</b> or an online tool (ie : http://www.r1ch.net/stuff/gif2png/webinterface/pngcrush.cgi) to reduce files size.
+		<br><br><hr>
+		<h3 id="Sources"><strong>8) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		I've used the following sources, sites or other files as listed.<br><br>
+		<b>Open source projects & jQuery</b>
+	  <div class="sub">
+		  <ul type="disc" style="margin-top: 0in;">
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">JQuery by&nbsp;</span><a href="http://www.jquery.com"><span style="">John
+				   Resig</span></a><span style=""><o:p></o:p></span></li>
+			   <li class="MsoNormal"> jQuery <a href="http://www.jqueryui.com">UI Plugin</a></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">jQuery superfish menu by&nbsp;</span><a href="http://plugins.jquery.com/project/Superfish"><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Joel Birch</span></a><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">
+		       <o:p></o:p></span></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">Piecemaker by&nbsp;</span><a href="http://www.modularweb.net/piecemaker/"><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Björn Crüger</span></a><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><o:p></o:p></span></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">jQuery Nivo Slider plugin
+				   by&nbsp;</span><a href="http://nivo.dev7studios.com/"><span style="">Gilbert Pellegrom</span></a><span style=""><o:p></o:p></span></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">jQuery Accodion by&nbsp;</span><a href="https://github.com/ProLoser/ElegantAccordion"><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">ProLoser</span></a></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">jQuery Cycle Plugin by</span><a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CBYQFjAA&amp;url=http%3A//jquery.malsup.com/cycle/&amp;ei=9177TNWsEJGKhQfdpqCfCw&amp;usg=AFQjCNElcAZOhI0MDVLXmeYYlMuNEKaeMw&amp;sig2=OE-8tuDLaAIpcGElcESS6w"><span style="">&nbsp;M. Alsup</span></a><span style=""><o:p></o:p></span></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="">jQuery Easing pack by</span><a href="http://gsgd.co.uk/sandbox/jquery/easing/"><span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">&nbsp;George McGinley Smith</span></a><span style=""><o:p></o:p></span></li>
+			   <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="http://cherne.net/brian/resources/jquery.hoverIntent.html"><span style="">jQuery hoverIntent</span></a><span style=""><o:p></o:p></span></li>
+			   <li class="MsoNormal"> Pretty photo by <a href="http://www.no-margin-for-errors.com">Stephane Caron </a></li>
+          </ul>
+		</div>
+		<br>
+		<b>Graphics</b>
+		<div class="sub">
+			<ul type="disc" style="margin-top: 0in;">
+				 <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal">Icons
+					 by <a href="http://www.iconfinder.com">www.iconfinder.com</a></li>
+				 <li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"> Preview images from <a href="http://www.fotolia.com/">www.fotolia.com</a></li>
+				 <li class="MsoNormal">Background patterns by <a href="http://www.premiumpixels.com/20-repeatable-pixel-patterns/">Orman Clark</a></li>
+	        </ul>
+	  </div>
+<b>Fonts</b>
+		<div class="sub">
+			<ul type="disc" style="margin-top: 0in;">
+				<li style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal">Yanone Kaffeesatz by <a href="http://www.dafont.com/yanone-kaffeesatz.font">Yanone Kaffeesatz</a> </li>
+			</ul>
+    </div><br><br>
+        <hr>
+		<center>
+		<strong class="error">If you like this theme, please don't forget to rate it on the ThemeForest site.</strong>
+		<br><br>Best regards<br>
+		<span style="font-size:16px;"><strong>tultul</strong></span></center><br>
+    </div>
+<!-- end div .container -->
+</body>
+</html>

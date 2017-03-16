@@ -1,0 +1,121 @@
+/* @override http://newmediacampaigns.com/css/compiled.css */
+
+/* Eric Meyer Reset */
+
+/* Layout */
+.boundingBox{ margin: 0 auto; width: 960px; }
+
+/* Content */
+
+#content{ padding: 20px 0; }
+
+
+/* Content - Portfolio Listing */
+
+ul#portfolio-filter{ margin: -20px 0; padding: 0; height: 64px; padding-left: 0px; line-height: 64px; background: transparent url(../images/icon-tag-green.png) left no-repeat; }
+ul#portfolio-filter li{ display: inline; color:#aaaaaa; }
+ul#portfolio-filter a{ margin-right: 0.5em; padding: 0.5em 0 2em 0.5em;  color: #AAA; font-weight: bold; text-decoration: none; }
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{  }
+ul#portfolio-filter a.current{  }
+
+ul#portfolio-list{ margin: 36px 0 0 0; padding: 0; list-style: none; width:990px; }
+ul#portfolio-list li{ width: 288px; background:#f4f4f4;
+border:1px solid #d3d3d3; 
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	padding:5px; height: 170px; display: block; float: left; margin-right: 30px; margin-bottom:30px; overflow: hidden; }
+
+ul#portfolio-list li img{ width:288px; height:170px;}
+ul#portfolio-list li a{ overflow: hidden;  }
+
+/* 3 column video portfolio
+------------------------------------------------*/
+.portfolio-small{ width:960px; margin-top:20px; margin-bottom:20px;}
+ul.portfolio-small li{ 
+	width: 300px; 
+	display: block; 
+	float: left;
+	margin-right: 30px;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+ul.portfolio-small li:last-child{ margin-right:0;}
+.portfolio-small li .image-box{
+	width:288px;
+	background:#f4f4f4;
+	padding:5px;
+	height:170px;
+	border:1px solid #d3d3d3; 
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom:15px; 
+}	
+.portfolio-small li img{
+	width:288px;
+	height:170px;
+}
+.portfolio-small li .blueButton{ margin-top:5px;}
+
+/* 4 column portfolio
+------------------------------------------------*/
+.portfolio-four{ width:960px; margin-top:20px; margin-bottom:20px;}
+ul.portfolio-four li{ 
+	width: 225px; 
+	display: block; 
+	float: left;
+	margin-right: 20px;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+ul.portfolio-four li:last-child{ margin-right:0;}
+.portfolio-four li .image-box{
+	width:213px;
+	background:#f4f4f4;
+	padding:5px;
+	height:170px;
+	border:1px solid #d3d3d3; 
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom:15px; 
+}	
+.portfolio-four li img{
+	width:213px;
+	height:170px;
+}
+.portfolio-four li .blueButton{ margin-top:5px;}
+.portfolio-four li .papillon_image span {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:90%;
+		background:url(../images/zoom2.png) no-repeat 50% 50%;
+		z-index:1;
+}
+.portfolio-small li .papillon_video span {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:90%;
+		background: url(../images/play.png) no-repeat 50% 50%;
+		z-index:1;
+}
+.portfolio-small li .papillon_image span {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:90%;
+		background:url(../images/zoom2.png) no-repeat 50% 50%;
+		z-index:1;
+}
